@@ -22,15 +22,15 @@
                     <form method="post" action="">
                     <div class="col-xs-6">
                         <h2 class="card-inside-title">Range</h2>   
-                        <div class="input-daterange input-group" id="bs_datepicker_range_container">
+                        <!-- <div class="input-daterange input-group" id="bs_datepicker_range_container"> -->
                             <div class="form-line">
-                                <input type="text" name="tanggal_awal" class="form-control" placeholder="Date start..." autocomplete="">
+                                <input type="date" name="tanggal_awal" class="form-control" placeholder="Date start..." autocomplete="off">
                             </div>
-                            <span class="input-group-addon">to</span>
+                            <span>to</span>
                             <div class="form-line">
-                                <input type="text" name="tanggal_akhir" class="form-control" placeholder="Date end..." autocomplete="">
+                                <input type="date" name="tanggal_akhir" class="form-control" placeholder="Date end..." autocomplete="off">
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="col-xs-6">
                         <br>  
@@ -65,7 +65,7 @@
                         		<td><?php echo $key['customer'] ?></td>
                         		<td><?php echo $key['nama_user'] ?></td>
                         		<td><?php echo $key['no_meja'] ?></td>
-                        		<td><?php echo $key['tanggal'] ?></td>
+                        		<td><?php echo $key['tanggal_transaksi'] ?></td>
                         		<td><?php echo $key['harga'] ?></td>
                         		<td><?php echo $key['total_bayar'] ?></td>
                         		<td><?php echo $key['kembalian'] ?></td>

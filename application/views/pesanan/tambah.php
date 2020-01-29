@@ -46,7 +46,7 @@
                                         <b>Tanggal</b>
                                     </p>
                                     <div class="form-line disabled">
-                                        <?php $tgl = date('d F Y h:i a') ; ?>
+                                        <?php date_default_timezone_set('Asia/Jakarta'); $tgl = date('d F Y h:i A', time()) ; ?>
                                         <input type="text" class="form-control" value="<?php echo $tgl; ?>" disabled="">
                                     </div>
                                 </div>
