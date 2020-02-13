@@ -7,7 +7,10 @@ class Pesanan extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Pesanan_model');
+		$session = $this->session->userdata('id_level');
 		if ($this->session->userdata('username') != TRUE) {
+			redirect(base_url());
+		}elseif ($session != 1 && $session != 3) {
 			redirect(base_url());
 		}
 	}

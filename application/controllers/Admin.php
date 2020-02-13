@@ -15,14 +15,14 @@ class Admin extends CI_Controller {
 	}
 
 	public function index()
-	{			
+	{
 		$data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
 		$data['title'] = "eRESTO | Admin Home";
 		// echo $data['user']['nama'];
 		$this->load->view('template/header', $data);
 		$this->load->view('template/admin_sidebar', $data);
 		$this->load->view('admin/index');
-		echo $data['user']['id_level'];
+		// echo $data['user']['id_level'];
 		$this->load->view('template/footer');
 	}
 

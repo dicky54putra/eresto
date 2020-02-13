@@ -7,7 +7,10 @@ class Masakan extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Masakan_model');
+		$session = $this->session->userdata('id_level');
 		if ($this->session->userdata('username') != TRUE) {
+			redirect(base_url());
+		}elseif ($session != 1) {
 			redirect(base_url());
 		}
 	}

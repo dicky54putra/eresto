@@ -23,13 +23,19 @@
                     <div class="col-xs-6">
                         <h2 class="card-inside-title">Range</h2>   
                         <!-- <div class="input-daterange input-group" id="bs_datepicker_range_container"> -->
-                            <div class="form-line">
-                                <input type="date" name="tanggal_awal" class="form-control" placeholder="Date start..." autocomplete="off">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-line">
+                                        <input type="date" name="tanggal_awal" class="form-control" placeholder="Date start..." autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-line">
+                                        <input type="date" name="tanggal_akhir" class="form-control" placeholder="Date end..." autocomplete="off">
+                                    </div>
+                                </div>
                             </div>
-                            <span>to</span>
-                            <div class="form-line">
-                                <input type="date" name="tanggal_akhir" class="form-control" placeholder="Date end..." autocomplete="off">
-                            </div>
+                            <!-- <span>to</span> -->
                         <!-- </div> -->
                     </div>
                     <div class="col-xs-6">

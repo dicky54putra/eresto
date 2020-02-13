@@ -7,7 +7,10 @@ class Transaksi extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Transaksi_model');
+		$session = $this->session->userdata('id_level');
 		if ($this->session->userdata('username') != TRUE) {
+			redirect(base_url());
+		}elseif ($session != 1 && $session != 2) {
 			redirect(base_url());
 		}
 	}
